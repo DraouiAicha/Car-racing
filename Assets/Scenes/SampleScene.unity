@@ -387,7 +387,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b9df79f8ce46ff4f94538f5c7494d52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  road_boxes: {fileID: 132832967542305940, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+  cameraTransform: {fileID: 963194228}
+  road_boxes: {fileID: 1691464200530267578, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
   previousRoad: {fileID: 0}
 --- !u!54 &1740678684
 Rigidbody:
@@ -418,64 +419,60 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &132832968072194891
+--- !u!1001 &1691464201870275350
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 132832967542305940, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267578, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_Name
       value: road_boxes
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.1288023
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.9958811
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalPosition.z
       value: 11.541747
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 132832967542305963, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+    - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 132832967812198362, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
-      propertyPath: m_Name
-      value: Helper_plan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}

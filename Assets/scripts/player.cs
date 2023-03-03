@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+    public Transform cameraTransform;
     private float x, z, speedSensitivity=0.03f;
     private bool isClicked=false;
     private int accelerate=0,i=0;
@@ -20,6 +21,9 @@ public class player : MonoBehaviour
         x=Input.GetAxis("Horizontal");
         z=Input.GetAxis("Vertical");
         transform.Translate(new Vector3(x*speedSensitivity, 0f, z*speedSensitivity));
+        Vector3 cameraPos = transform.position - transform.forward * 3f + Vector3.up * 2f;
+        cameraTransform.position = cameraPos;
+        cameraTransform.LookAt(transform.position);
     }
     void FixedUpdate() {
         if(Input.GetKeyDown(KeyCode.UpArrow)) {
@@ -28,7 +32,7 @@ public class player : MonoBehaviour
         }
         if(isClicked) {
             if(accelerate==1) {
-                transform.Translate(new Vector3(x*speedSensitivity, 0f, z*speedSensitivity*accelerate));
+                transform.Translate(new Vector3(x*speedSensitivity, 0f, z*speedSensitivity*accelerate*200));
             }
             transform.Translate(new Vector3(0f, 0f, speedSensitivity));
             accelerate=0;
@@ -44,7 +48,7 @@ public class player : MonoBehaviour
             previousRoad = GameObject.FindGameObjectWithTag("road_boxes");
             if (previousRoad != null)
             {
-                Destroy(previousRoad, 0.5f);
+                Destroy(previousRoad, 1f);
             }
         }
     }
