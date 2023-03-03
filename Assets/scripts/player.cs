@@ -24,14 +24,14 @@ public class player : MonoBehaviour
     void FixedUpdate() {
         if(Input.GetKeyDown(KeyCode.UpArrow)) {
             isClicked=true;
-            //accelerate=1;
+            accelerate=1;
         }
         if(isClicked) {
-            /*if(accelerate==1) {
+            if(accelerate==1) {
                 transform.Translate(new Vector3(x*speedSensitivity, 0f, z*speedSensitivity*accelerate));
-            }*/
+            }
             transform.Translate(new Vector3(0f, 0f, speedSensitivity));
-            //accelerate=0;
+            accelerate=0;
         }
     }
     
