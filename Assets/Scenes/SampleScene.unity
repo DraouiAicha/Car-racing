@@ -390,6 +390,8 @@ MonoBehaviour:
   cameraTransform: {fileID: 963194228}
   road_boxes: {fileID: 1691464200530267578, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
   previousRoad: {fileID: 0}
+  bumpForce: 500
+  bumpRotation: 20
 --- !u!54 &1740678684
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -404,7 +406,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 84
   m_CollisionDetection: 0
 --- !u!65 &1740678685
 BoxCollider:
@@ -417,7 +419,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2.2, y: 1, z: 4}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1691464201870275350
 PrefabInstance:
@@ -473,6 +475,14 @@ PrefabInstance:
     - target: {fileID: 1691464200530267579, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691464200873843356, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1691464201962478817, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fa3d147bbe067946a35c6477739aca6, type: 3}
